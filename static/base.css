@@ -1,0 +1,16 @@
+.practice_django_logo {
+    font-family: 'Handjet', cursive;
+}
+
+.practice_django_footer_button{
+    font-size: .6rem;
+}
+
+.practice_django_footer{
+    text-align:center;  margin-top:2rem;
+}
+
+.practice_django_header{
+    text-align:center;
+    margin: 2rem 0;
+}
