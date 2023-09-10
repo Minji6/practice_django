@@ -82,8 +82,13 @@ venv/
 
 db.sqlite3
 
-.idea
+.idea/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
+
+__pycache__/
+/db_backup.sqlite3
+
+media/
