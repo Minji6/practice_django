@@ -12,5 +12,5 @@ class Article(models.Model):
     image = models.ImageField(upload_to='article/', null=False)
     content = models.TextField(null=True)
 
-    created_at = models.DateField(auto_created=True, null=True)
+    created_at = models.DateField(auto_now_add=True, null=True)
     # 언제 만들어졌는지 확인, 생성되었을 때 자동으로 생성시간이 저장된다.
