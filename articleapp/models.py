@@ -2,9 +2,12 @@ from django.contrib.auth.models import User
 from django.db import models
 
 # Create your models here.
+from projectapp.models import Project
+
 
 class Article(models.Model):
     writer = models.ForeignKey(User, on_delete=models.SET_NULL, related_name='article', null=True)
+    project = models.ForeignKey(Project, on_delete=models.SET_NULL, related_name='article', null=True)
     # on_delete=models.SET_NULL: 회원탈퇴를 했을 때 게시글이 사라지지 않고 알수없음 등으로 설정하겠다는 의미
     # 유저 객체에서 article을 접근할 때 직관적이기 위함
 
